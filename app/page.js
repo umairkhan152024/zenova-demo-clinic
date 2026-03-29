@@ -14,6 +14,7 @@ import {
   FaCheckCircle,
   FaArrowRight,
 } from "react-icons/fa";
+import BookingForm from "./components/BookingForm";
 
 const services = [
   {
@@ -501,66 +502,7 @@ export default function Home() {
             <p className="text-slate-400 text-sm mb-8">
               Fill the form and we will confirm within 1 hour via WhatsApp.
             </p>
-            <div className="space-y-4">
-              <div>
-                <label className="text-xs font-bold text-slate-500 tracking-wide mb-1 block">
-                  FULL NAME
-                </label>
-                <input
-                  placeholder="Enter your name"
-                  className="w-full px-5 py-3.5 rounded-xl border border-slate-200 text-sm outline-none focus:border-emerald-500 bg-white"
-                />
-              </div>
-              <div>
-                <label className="text-xs font-bold text-slate-500 tracking-wide mb-1 block">
-                  PHONE NUMBER
-                </label>
-                <input
-                  placeholder="+92 3XX XXXXXXX"
-                  className="w-full px-5 py-3.5 rounded-xl border border-slate-200 text-sm outline-none focus:border-emerald-500 bg-white"
-                />
-              </div>
-              <div>
-                <label className="text-xs font-bold text-slate-500 tracking-wide mb-1 block">
-                  SERVICE
-                </label>
-                <select className="w-full px-5 py-3.5 rounded-xl border border-slate-200 text-sm text-slate-500 outline-none focus:border-emerald-500 bg-white">
-                  <option>Select a service</option>
-                  <option>General Consultation</option>
-                  <option>Diabetes / BP Checkup</option>
-                  <option>Respiratory Issue</option>
-                  <option>Preventive Checkup</option>
-                  <option>Home Visit</option>
-                  <option>Vaccination</option>
-                </select>
-              </div>
-              <div>
-                <label className="text-xs font-bold text-slate-500 tracking-wide mb-1 block">
-                  PREFERRED TIME
-                </label>
-                <select className="w-full px-5 py-3.5 rounded-xl border border-slate-200 text-sm text-slate-500 outline-none focus:border-emerald-500 bg-white">
-                  <option>Select time slot</option>
-                  <option>Morning (9 AM - 1 PM)</option>
-                  <option>Evening (5 PM - 9 PM)</option>
-                </select>
-              </div>
-              <div>
-                <label className="text-xs font-bold text-slate-500 tracking-wide mb-1 block">
-                  MESSAGE
-                </label>
-                <textarea
-                  rows={3}
-                  placeholder="Describe your symptoms..."
-                  className="w-full px-5 py-3.5 rounded-xl border border-slate-200 text-sm outline-none focus:border-emerald-500 bg-white resize-none"
-                />
-              </div>
-              <button className="w-full bg-emerald-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-emerald-700 transition shadow-lg shadow-emerald-200 flex items-center justify-center gap-2 mt-2">
-                Book Appointment <FaArrowRight size={14} />
-              </button>
-              <p className="text-center text-xs text-slate-400">
-                We will confirm via WhatsApp within 1 hour
-              </p>
-            </div>
+            <BookingForm />
           </div>
         </div>
       </section>
@@ -669,10 +611,10 @@ export default function Home() {
       </footer>
 
       <a
-        href="https://wa.me/923001234567?text=Hello%20Doctor%20I%20want%20to%20book%20an%20appointment"
+        href="https://wa.me/923001234567"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-green-500 w-16 h-16 rounded-full flex items-center justify-center shadow-2xl shadow-green-400/40 hover:scale-110 transition z-50"
+        className="fixed bottom-6 right-6 bg-green-500 w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition z-50"
       >
         <FaWhatsapp size={32} className="text-white" />
       </a>
