@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "ZENOVA Clinic | Doctor Appointment Booking",
   description:
-    "Book appointments with top doctors in Pakistan. ZENOVA Clinic offers easy online scheduling, patient management, and admin dashboard powered by ZENOVA Digital Solutions.",
+    "Book appointments with top doctors in Pakistan. ZENOVA Clinic offers easy online appointment scheduling, patient management system, and a powerful admin dashboard. Built with Next.js 14, MongoDB, and Tailwind CSS. Powered by ZENOVA Digital Solutions.",
   openGraph: {
     title: "ZENOVA Clinic | Doctor Appointment Booking",
     description:
-      "Book appointments with top doctors. Powered by ZENOVA Digital Solutions.",
+      "Book appointments with top doctors in Pakistan. ZENOVA Clinic offers easy online appointment scheduling, patient management system, and a powerful admin dashboard. Built with Next.js 14, MongoDB, and Tailwind CSS. Powered by ZENOVA Digital Solutions.",
     url: "https://zenova-demo-clinic.vercel.app",
     images: [
       {
